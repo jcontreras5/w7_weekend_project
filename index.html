@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<title>Weather API</title>
+</head>
+<body>
+    <div class="container-fluid" >
+        <div class="row" id="nav" >
+            <div class="offset-4 col-4 text-center">
+                <H1>Weather API</H1></div>
+        </div>
+
+        <!-- forms -->
+        <div class="row " id="form" >
+            <div class="col-12 d-flex justify-content-center">
+                <form name="Data" id="FormData">
+                    <!-- city -->
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="Enter city here">
+                    <!-- round -->
+                    <!-- submit -->
+                    <button type="submit" id="submitButton" onclick="load_data()">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row"id="weather-data" >
+        </div>
+
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-image: url(/images/photo-1530908295418-a12e326966ba.jpg);
+    background-size: cover;
+}
+
+#weather-data{
+    margin:250px auto;
+}
+
+#weather{
+    display: grid;
+    grid-template-rows:5%,20%,20%,20%,20%;
+    grid-template-areas: 
+    "city"
+    "high"
+    "low"
+    "forecast"
+    "humditiy";
+}
+
+#city{
+    grid-area:"city";
+}
+
+#high{
+    grid-area:"high";
+}
+
+#low{
+    grid-area:"low";
+}
+
+#forecast{
+    grid-area:"forecast";
+}
+
+#humidity{
+    grid-area:"humidity";
+}
